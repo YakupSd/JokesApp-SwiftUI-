@@ -11,6 +11,9 @@
 		F3A44D9B2A5D459100DA3675 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A44D9A2A5D459100DA3675 /* ContentView.swift */; };
 		F3A44D9D2A5D459200DA3675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A44D9C2A5D459200DA3675 /* Assets.xcassets */; };
 		F3A44DA02A5D459200DA3675 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A44D9F2A5D459200DA3675 /* Preview Assets.xcassets */; };
+		F3A44DA72A5D491C00DA3675 /* JokesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A44DA62A5D491C00DA3675 /* JokesData.swift */; };
+		F3A44DA92A5D4D3300DA3675 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A44DA82A5D4D3300DA3675 /* JokesViewModel.swift */; };
+		F3A44DAC2A5D4F7300DA3675 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F3A44DAB2A5D4F7300DA3675 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,8 @@
 		F3A44D9A2A5D459100DA3675 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3A44D9C2A5D459200DA3675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A44D9F2A5D459200DA3675 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3A44DA62A5D491C00DA3675 /* JokesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesData.swift; sourceTree = "<group>"; };
+		F3A44DA82A5D4D3300DA3675 /* JokesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A44DAC2A5D4F7300DA3675 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +59,10 @@
 			children = (
 				F3A44D982A5D459100DA3675 /* JokesApp_SwiftUI_App.swift */,
 				F3A44D9A2A5D459100DA3675 /* ContentView.swift */,
+				F3A44DA62A5D491C00DA3675 /* JokesData.swift */,
 				F3A44D9C2A5D459200DA3675 /* Assets.xcassets */,
 				F3A44D9E2A5D459200DA3675 /* Preview Content */,
+				F3A44DA82A5D4D3300DA3675 /* JokesViewModel.swift */,
 			);
 			path = "JokesApp(SwiftUI)";
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "JokesApp(SwiftUI)";
+			packageProductDependencies = (
+				F3A44DAB2A5D4F7300DA3675 /* Alamofire */,
+			);
 			productName = "JokesApp(SwiftUI)";
 			productReference = F3A44D952A5D459100DA3675 /* JokesApp(SwiftUI).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = F3A44D8C2A5D459100DA3675;
+			packageReferences = (
+				F3A44DAA2A5D4F7300DA3675 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F3A44D962A5D459100DA3675 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +153,8 @@
 			files = (
 				F3A44D9B2A5D459100DA3675 /* ContentView.swift in Sources */,
 				F3A44D992A5D459100DA3675 /* JokesApp_SwiftUI_App.swift in Sources */,
+				F3A44DA72A5D491C00DA3675 /* JokesData.swift in Sources */,
+				F3A44DA92A5D4D3300DA3675 /* JokesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3A44DAA2A5D4F7300DA3675 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3A44DAB2A5D4F7300DA3675 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3A44DAA2A5D4F7300DA3675 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3A44D8D2A5D459100DA3675 /* Project object */;
 }
